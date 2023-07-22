@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primary-color: #122D5A;
+    --secondary-color: #B2B0BF;
+    --third-color: #2F4570;
+    --font-size-1: 52px;
+    --font-size-2: 42px;
+    --font-size-3: 22px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif, 'DM Sans';
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) ;
+    border-color: var(--primary-color) ;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-brand {
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--secondary-color);
+}
+
+header, .autentikasi {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header.detail, .detail-content {
+    width: 75% !important;
+}
+
+@media screen and (max-width:768px) {
+    header, header.detail{
+        width: 100%;
+    }
+}
+
+header .header-title{
+    font-size: var(--font-size-1);
+    font-weight: 900;
+}
+
+.hero-post .hero-post-img{
+    height: 460px;
+    object-fit: cover;
+}
+
+.hero-post .hero-post-title{
+    font-size: var(--font-size-2);
+    font-weight: 900;
+}
+
+.hero-post .avatar, 
+.card-post .avatar{
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+}
+
+.card-post{
+    transition: .3s;
+}
+
+.card-post:hover{
+    transform: translateY(-10px);
+}
+
+.card-post .card-img-top{
+    height: 360px;
+    object-fit: cover;
+}
+
+.card-post .card-post-title{
+    font-size: var(--font-size-3);
+    font-weight: 700;
+}
+
+section .section-title{
+    font-size: var(--font-size-2);
+    font-weight: 700;
+}
